@@ -1,0 +1,30 @@
+body {
+    height:auto;
+    width:100%;
+    background-color: darkgreen;
+    background-size:  100%;
+    background: url("http://1.bp.blogspot.com/-6My51Q5s7DQ/TzxXqaL6SdI/AAAAAAAAAeU/HMmqZu8Wvfc/s1600/teenage_mutant_ninja_turtles_by_nebezial.jpg");
+  }
+  header,
+  h1{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      color: rgb(40, 75, 40);
+      text-align: center;
+  }
+  .container {
+    padding-top: 50px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    color: white;
+    font-size: 22px;
+  }
+  button{
+      float: right;
+  }
+  p{
+      color:rgb(66, 221, 66);
+      text-decoration-color: antiquewhite;
+  }
+
