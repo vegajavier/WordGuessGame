@@ -13,7 +13,7 @@ body {
       color: rgb(66,221,66);
       text-align: center;
   }
-  .game-instructions {
+  .gameInstructions {
     margin-top: 250px;
     margin-left: 400px;
     padding-top: 50px;
@@ -61,7 +61,7 @@ body {
       text-shadow: 4px 8px black;
   }
   @media screen{
-    max-width: 980px,768px,640px;
+    min-width: 980px,768px,640px;
 }
   
 

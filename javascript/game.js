@@ -1,44 +1,45 @@
-// choosing a random word //
-//create an array for turtle words//
-const words=[
-        "leonardo" , "donattello" , "rafael" , "michaelangelo" , "splinter" , "shredder" , "april oniel" , "casey jones" , "rock steady" , "bebop"
+/// array of ninja turtles character names
+const words = [
+        "leonardo", "donattello", "rafael", "michaelangelo", "splinter", "shredder", "april oniel", "casey jones", "rock steady", "bebop"
 ];
-let wins=0;
-let loss=0;
-let wrongGuess = 0;
-const guessesRemaining= 8;
-const attempts = 8;
-let userGuesses = [];
-let underScores = "";
+///// generate random word with underscores
 let shuffleWords;
-const dash="_  ";
-let newGame;
-
+let underScores = "";
+const dash = "_  ";
+let guessesLeft = 8;
+var usersguesses = [];
 // create dashes for length of words//
-function playGame(){
-        
+
+function newGame() {
+        let guessesLeft = 8;
         shuffleWords = words[Math.floor(Math.random() * words.length)];
-       
-console.log(shuffleWords);
+        console.log(shuffleWords);
+        let len = shuffleWords.length;
+        underScores = dash.repeat(len);
+        console.log(underScores);
 
-let len=shuffleWords.length;
-underScores=dash.repeat(len);
-
-console.log(underScores);
+        document.querySelector(".underScorescontainer").innerHTML = underScores;
 }
+let correct = [];
+let incorrect = [];
+document.addEventListener("keypress", (event) => {
+        console.log(event.key);
+        let userletter = event.key //key user typed
+        let inputlower = (userletter.toLowerCase());
+         if (guessesLeft !== 0) {
+                usersguesses.push(inputlower);
+                 //getting index of userinput against shuffle word;
+                let words = []; //taking empty string to store positions.
+                for (i = 0; i < shuffleWords.length; i++) //if 
+                {
+                if (shuffleWords[i] == inputlower)
+                 words.push(i); //to push input to word if both characters are same.
+                }
+                console.log(words);
+         }
 
-//start game test////
-console.log(playGame());
 
-document.querySelector(".underScorescontainer").innerHTML = underScores;
-//
-// keycode =o;
-// arr=[length,e,o,r,o,da,o,]
-// for(i=0;i<arr.length;i++){
-//         if(kecode===arr[i]){
-//                 get indexedDB,
-//                 i,3,6
-// =>o        }
-// }
-// --0--0
 
+})
+
+newGame()
