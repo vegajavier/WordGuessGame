@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Hangman Ninja Turtles</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+        
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
@@ -16,18 +16,28 @@
             <br>
             <h2>Guess your favorite Turtle Character</h2>
         </header>
-        <section class = "container">
+        
+        <section class = "game-instructions">
             <p>Name That Character</p>
             <p>Guesses</p>
             <p>Letters Used</p>
-            <br>
-            <div>
-                    <button type="button" class="btn btn-success">PLAY</button>
-            </div>
-        </section>
+            
+                <button type="button" class="btn btn-success" onclick="newGame()">PLAY GAME</button>
+            
+         </section>
+         
+            
         
+        <div class ="underScorescontainer"></div>
+        
+        <div class="guesses">placeholder</div>
+
+        <div class ="lettersused">placeholder</div>
         
         <script src="javascript/game.js">
         </script>
+        
+        
+       
     </body>
 </html>
