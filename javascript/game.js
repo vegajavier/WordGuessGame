@@ -3,42 +3,55 @@ const words = [
         "leonardo", "donattello", "rafael", "michaelangelo", "splinter", "shredder", "april oniel", "casey jones", "rock steady", "bebop"
 ];
 ///// generate random word with underscores
+// create dashes for length of words//
 let shuffleWords;
 let underScores = "";
-const dash = "_  ";
+const dash = "_ ";
 let guessesLeft = 8;
-var usersguesses = [];
-// create dashes for length of words//
-
+let userGuesses = [];
 function newGame() {
-        let guessesLeft = 8;
         shuffleWords = words[Math.floor(Math.random() * words.length)];
         console.log(shuffleWords);
         let len = shuffleWords.length;
-        underScores = dash.repeat(len);
+        underScores = dash.repeat(len).split("");
         console.log(underScores);
 
+      
         document.querySelector(".underScorescontainer").innerHTML = underScores;
-}
-let correct = [];
-let incorrect = [];
+        
+};
 document.addEventListener("keypress", (event) => {
         console.log(event.key);
         let userletter = event.key //key user typed
         let inputlower = (userletter.toLowerCase());
-         if (guessesLeft !== 0) {
-                usersguesses.push(inputlower);
-                 //getting index of userinput against shuffle word;
-                let words = []; //taking empty string to store positions.
+        if (guessesLeft !== 0) {
+                userGuesses.push(inputlower);
+                //getting index of userinput against shuffle word;
+                let indexes = []; //taking empty string to store positions.
                 for (i = 0; i < shuffleWords.length; i++) //if 
                 {
-                if (shuffleWords[i] == inputlower)
-                 words.push(i); //to push input to word if both characters are same.
+                        if (shuffleWords[i] == inputlower)
+                                indexes.push(i); //to push input to word if both characters are same.
+                               
                 }
-                console.log(words);
-         }
+                console.log(indexes);
+
+                for (let i = 0; i < indexes.length; i++) {
+                        let specificIndex = indexes[i];
+                        underScores[specificIndex] = userletter;
+                }
+          
+                console.log(underScores)
+                document.querySelector(".underScorescontainer").innerHTML = userGuesses;
+
+                
+
+                let correct = [];
+                let incorrect = [];
 
 
+
+        }
 
 })
 
