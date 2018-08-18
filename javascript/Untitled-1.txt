@@ -1,0 +1,17 @@
+const words = [
+	"leonardo", "donattello", "rafael", "michaelangelo", "splinter", "shredder", "april oniel", "casey jones", "rock steady", "bebop"
+]; 
+
+let word = words[Math.floor(Math.random() * words.lenght)];
+
+/// random word
+
+let randword = [];
+    for (let i = 0; i < words.length; i++){
+        randword[i] = "_ ";
+    }
+	console.log(randword)
+	
+//// game variable to track letter remaining to guess
+let remainingLetters = word.length;
+	while (remainingLetters > 0)

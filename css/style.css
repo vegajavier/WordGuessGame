@@ -1,67 +1,65 @@
 body {
-    height:auto;
-    width:100%;
-    background-color: darkgreen;
-    background-size:  100%;
-    background: url("http://1.bp.blogspot.com/-6My51Q5s7DQ/TzxXqaL6SdI/AAAAAAAAAeU/HMmqZu8Wvfc/s1600/teenage_mutant_ninja_turtles_by_nebezial.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  header,
-  h1{
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-      color: rgb(66,221,66);
-      text-align: center;
-  }
-  .gameInstructions {
-    margin-top: 250px;
-    margin-left: 400px;
-    padding-top: 50px;
-    width: 100%;
-    max-width: 768px;
-    clear: both;
-    color: white;
-    font-size: 22px;
-    border: 3px solid rgb(66, 221, 66);
-    font-weight: 700;
-  }
-  .underScorescontainer{
-    margin-top: -190px;
-    margin-left: 650px;
-    width: 100%;
-    max-width: 500px;
-    color: white;
-    font-size: 22px; 
-    border: 1px solid rgb(66, 221, 66);
-  }
-  .guesses{
-    margin-top: 15px;
-    margin-left: 650px;
-    width: 100%;
-    max-width: 500px;
-    color: white;
-    font-size: 22px; 
-    border: 1px solid rgb(66, 221, 66);
-  }
-  .lettersused{
-    margin-top: 20px;
-    margin-left: 650px;
-    width: 100%;
-    max-width: 500px;
-    color: white;
-    font-size: 22px; 
-    border: 1px solid rgb(66, 221, 66);
-
-  }
-.btn{ 
-      float: right;
-  }
-  p{
-      color: rgb(66, 221, 66);
-      text-shadow: 4px 8px black;
-  }
-  @media screen{
-    min-width: 980px,768px,640px;
+  height:auto;
+  width:100%;
+  background-color: darkgreen;
+  background-size:  100%;
+  background: url("http://1.bp.blogspot.com/-6My51Q5s7DQ/TzxXqaL6SdI/AAAAAAAAAeU/HMmqZu8Wvfc/s1600/teenage_mutant_ninja_turtles_by_nebezial.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-  
+header,
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: rgb(66,221,66);
+    text-align: center;
+}
+.gameInstructions {
+  margin-top: 250px;
+  margin-left: 400px;
+  padding-top: 50px;
+  width: 100%;
+  max-width: 768px;
+  clear: both;
+  color: white;
+  font-size: 22px;
+  border: 3px solid rgb(66, 221, 66);
+  font-weight: 700;
+}
+.underScorescontainer{
+  margin-top: -190px;
+  margin-left: 650px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  font-size: 22px; 
+  border: 1px solid rgb(66, 221, 66);
+}
+.guesses{
+  margin-top: 15px;
+  margin-left: 650px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  font-size: 22px; 
+  border: 1px solid rgb(66, 221, 66);
+}
+.lettersused{
+  margin-top: 20px;
+  margin-left: 650px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  font-size: 22px; 
+  border: 1px solid rgb(66, 221, 66);
 
+}
+.btn{ 
+    float: right;
+}
+p{
+    color: rgb(66, 221, 66);
+    text-shadow: 4px 8px black;
+}
+@media screen{
+  min-width: 980px,768px,640px;
+}
